@@ -25,7 +25,7 @@ jobs:
         file /Users/runner/Library/Developer/Xcode/DerivedData//libusb-*/Build/Products/Release/libusb-1.0.0.dylib
         cp /Users/runner/Library/Developer/Xcode/DerivedData//libusb-*/Build/Products/Release/libusb-1.0.0.dylib .
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: libusb
         path: libusb-1.0.26/Xcode/libusb-1.0.0.dylib
