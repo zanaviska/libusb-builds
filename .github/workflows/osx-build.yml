@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: libusb
-        path: libusb-1.0.30Xcode/libusb-1.0.0.dylib
+        path: libusb-1.0.30/Xcode/libusb-1.0.0.dylib
