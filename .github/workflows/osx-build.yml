@@ -20,7 +20,7 @@ jobs:
     - name: build
       shell: bash
       run: |
-        cd libusb-1.0.26/Xcode
+        cd libusb-1.0.30/Xcode
         xcodebuild -project libusb.xcodeproj -scheme libusb -configuration Release
         file /Users/runner/Library/Developer/Xcode/DerivedData//libusb-*/Build/Products/Release/libusb-1.0.0.dylib
         cp /Users/runner/Library/Developer/Xcode/DerivedData//libusb-*/Build/Products/Release/libusb-1.0.0.dylib .
@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: libusb
-        path: libusb-1.0.26/Xcode/libusb-1.0.0.dylib
+        path: libusb-1.0.30Xcode/libusb-1.0.0.dylib
